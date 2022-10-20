@@ -4,11 +4,10 @@ description: "belajar pemrograman dasar bahasa go"
 slug: "belajar-pemrograman-golang"
 date: 2022-10-20T17:08:27+07:00
 image: 
-math: 
-license: 
-hidden: false
-comments: true
-draft: false
+categories:
+    - blog
+tags:
+    - golang
 ---
 
 Dari sekian banyak bahasa pemrograman yang ada, saya sangat tertarik sekali pada bahasa pemrograman yang dikembangkan oleh google yang diberi nama go atau sering juga disebut golang.
