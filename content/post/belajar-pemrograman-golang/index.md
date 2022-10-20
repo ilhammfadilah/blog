@@ -8,7 +8,7 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 
 Dari sekian banyak bahasa pemrograman yang ada, saya sangat tertarik sekali pada bahasa pemrograman yang dikembangkan oleh google yang diberi nama go atau sering juga disebut golang.
