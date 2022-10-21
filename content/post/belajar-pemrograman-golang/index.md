@@ -20,5 +20,6 @@ Untuk saat ini topik - topik yang dipelajari adalah sebagai berikut:
 - variabel
 - tipe data
 - operator
+- seleksi kondisi
 
 Untuk kedepannya nanti akan dipelajari lagi lebih dalam. Dan semoga saja tetap konsisten dalam mempelajari golang ini dan juga menulis dokumentasi dari setiap kegiatan.
