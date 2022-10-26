@@ -21,5 +21,28 @@ Untuk saat ini topik - topik yang dipelajari adalah sebagai berikut:
 - tipe data
 - operator
 - seleksi kondisi
+- perulangan
+- array
+- slice
+- map
+- fungsi
+- fungsi multiple return
+- fungsi variadic
+- fungsi closure
+- fungsi sebagai parameter
+- pointer
+- struct
+- method
+- properti public dan private (exported dan unexported)
+- interface
+- interface kosong (any)
+- reflect
+- goroutine
+- channel
+- buffered channel
+- channel - select
+- channel - range & close
+- channel timeout
+- defer dan exit
 
 Untuk kedepannya nanti akan dipelajari lagi lebih dalam. Dan semoga saja tetap konsisten dalam mempelajari golang ini dan juga menulis dokumentasi dari setiap kegiatan.
