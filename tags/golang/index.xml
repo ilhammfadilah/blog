@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on Ilham Muhamad Fadilah</title><link>https://ilhammfadilah.github.io/blog/tags/golang/</link><description>Recent content in golang on Ilham Muhamad Fadilah</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 19 Nov 2022 13:24:13 +0700</lastBuildDate><atom:link href="https://ilhammfadilah.github.io/blog/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Array</title><link>https://ilhammfadilah.github.io/blog/p/array/</link><pubDate>Sat, 19 Nov 2022 13:24:13 +0700</pubDate><guid>https://ilhammfadilah.github.io/blog/p/array/</guid><description>&lt;p>biasanya sebuah variable hanya dapat menampung satu jenis nilai saja, tetapi ada sebuha cara untuk menampung banyak nilai dengan hanya menggunakan satu variable. Dengan menggunakan array kita dapat menampung banyak nilai sekaligus di dalam satu variabel.&lt;/p>
+&lt;p>tidak hanya array dalam golang juga ada interface, slice dan map yang juga dapat menampung banyak nilai di dalam satu variabel.&lt;/p>
+&lt;p>pada golang mendeklarasikan array harus dengan menyertakan ukuran dan tipe datanya.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">animals&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="kt">string&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="s">&amp;#34;cat, &amp;#34;&lt;/span>&lt;span class="nx">dog&lt;/span>&lt;span class="s">&amp;#34;, &amp;#34;&lt;/span>&lt;span class="nx">hamster&lt;/span>&lt;span class="err">&amp;#34;&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>untuk mengaksesnya dapat dilakukan perulangan&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nb">len&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">animals&lt;/span>&lt;span class="p">);&lt;/span> &lt;span class="nx">i&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lists&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">animals&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Prinln&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">lists&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Tide Data</title><link>https://ilhammfadilah.github.io/blog/p/tide-data/</link><pubDate>Fri, 18 Nov 2022 18:28:38 +0700</pubDate><guid>https://ilhammfadilah.github.io/blog/p/tide-data/</guid><description>&lt;p>go menyediakan banyak tipe data yang dapat digunakan seprti numeric, string, boolean, error dan kemampuan untuk membuat tipe data secara custom atau kita yang membuat sebuah tipe data.&lt;/p>
+&lt;p>ketika mendeklarasikan variabel maka akan secara otomatis nilai vatiabel diberi null. contohnya &amp;lsquo;var s string&amp;rsquo; s disini akan berisi &amp;lsquo;&amp;quot;&amp;quot;&amp;rsquo; string kosong.&lt;/p>
+&lt;p>dibawah ini contoh tipe data&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">const&lt;/span> &lt;span class="nx">a&lt;/span> &lt;span class="kt">int32&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">12&lt;/span> &lt;span class="c1">//32bit integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">const&lt;/span> &lt;span class="nx">b&lt;/span> &lt;span class="kt">float32&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mf">20.2&lt;/span> &lt;span class="c1">//32bit float
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">c&lt;/span> &lt;span class="kt">complex128&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="m">4i&lt;/span> &lt;span class="c1">//128 bit complex number
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">d&lt;/span> &lt;span class="kt">uint16&lt;/span> &lt;span class="p">=&lt;/span>&lt;span class="mi">14&lt;/span> &lt;span class="c1">//16bit unsigned integer
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">n&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="c1">//int
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">pi&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="mf">3.14&lt;/span> &lt;span class="c1">//float64
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">y&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">false&lt;/span> &lt;span class="c1">//boolean
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">z&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="s">&amp;#34;golang&amp;#34;&lt;/span> &lt;span class="c1">//string
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Variable</title><link>https://ilhammfadilah.github.io/blog/p/belajar-variable-pada-golang/</link><pubDate>Thu, 17 Nov 2022 12:04:42 +0700</pubDate><guid>https://ilhammfadilah.github.io/blog/p/belajar-variable-pada-golang/</guid><description>&lt;p>variable merupakan sebuah nama yang diisi dengan sebuah nilai. jika kita memanggil sebuah variable, maka yang di acu adalah nilai yang ada di dalam variable tersebut. Pada golang untuk memakai sebuah variable, sebelumnya kita harus mendaklarasikan nya terlebih dahulu. Dalam golang juga ketika kita mendeklarasikan sebuah variable tetapi variable tersebut tidak dipakai maka itu akan terjadi error.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">nilai&lt;/span> &lt;span class="kt">string&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>kode di atas merupakan deklarasi variable dengan nama nilai dan memiliki type data string.&lt;/p>
+&lt;p>deklarasi juga dapat dilakukan secara grouping&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">a&lt;/span> &lt;span class="kt">int&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">b&lt;/span> &lt;span class="kt">bool&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">c&lt;/span> &lt;span class="kt">float64&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>cara lain mendeklarasikan sebuah variable bisa dengan menggunakan operator &amp;lsquo;:=&amp;rsquo; dengan menggunakan operator tersebut itu artinya kita mendeklarasikan sekaligus mengisi nilai variable tersebut.&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">a&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="mi">42&lt;/span> &lt;span class="c1">//inisialisasi dan mengisi nilai variable tunggal
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">b&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">c&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">12.5&lt;/span> &lt;span class="c1">//inisialisasi dan mengisi nilai variable majemuk
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Belajar Pemrograman Golang</title><link>https://ilhammfadilah.github.io/blog/p/belajar-pemrograman-golang/</link><pubDate>Thu, 20 Oct 2022 17:08:27 +0700</pubDate><guid>https://ilhammfadilah.github.io/blog/p/belajar-pemrograman-golang/</guid><description>&lt;p>Dari sekian banyak bahasa pemrograman yang ada, saya sangat tertarik sekali pada bahasa pemrograman yang dikembangkan oleh google yang diberi nama go atau sering juga disebut golang.&lt;/p>
+&lt;p>Sumber pembelajaran yang saya gunakan adalah ebook yang ditulis oleh Noval Agung Prayogo. Ebook ini dapat didapatkan secara gratis. dan materi didalamnya pun dapat diakses melalui &lt;a class="link" href="https://dasarpemrogramangolang.novalagung.com/" target="_blank" rel="noopener"
+>dasar-pemrograman-golang&lt;/a>&lt;/p>
+&lt;p>Sebagai catatan pembelajaran, saya juga mendokumentasikan pembelajaran pada github repository yang bisa dikunjungi &lt;a class="link" href="https://github.com/ilhammfadilah/dasar-pemrograman-golang" target="_blank" rel="noopener"
+>Github&lt;/a>&lt;/p>
+&lt;p>Untuk saat ini topik - topik yang dipelajari adalah sebagai berikut:&lt;/p>
+&lt;ul>
+&lt;li>variabel&lt;/li>
+&lt;li>tipe data&lt;/li>
+&lt;li>operator&lt;/li>
+&lt;li>seleksi kondisi&lt;/li>
+&lt;li>perulangan&lt;/li>
+&lt;li>array&lt;/li>
+&lt;li>slice&lt;/li>
+&lt;li>map&lt;/li>
+&lt;li>fungsi&lt;/li>
+&lt;li>fungsi multiple return&lt;/li>
+&lt;li>fungsi variadic&lt;/li>
+&lt;li>fungsi closure&lt;/li>
+&lt;li>fungsi sebagai parameter&lt;/li>
+&lt;li>pointer&lt;/li>
+&lt;li>struct&lt;/li>
+&lt;li>method&lt;/li>
+&lt;li>properti public dan private (exported dan unexported)&lt;/li>
+&lt;li>interface&lt;/li>
+&lt;li>interface kosong (any)&lt;/li>
+&lt;li>reflect&lt;/li>
+&lt;li>goroutine&lt;/li>
+&lt;li>channel&lt;/li>
+&lt;li>buffered channel&lt;/li>
+&lt;li>channel - select&lt;/li>
+&lt;li>channel - range &amp;amp; close&lt;/li>
+&lt;li>channel timeout&lt;/li>
+&lt;li>defer dan exit&lt;/li>
+&lt;/ul>
+&lt;p>Untuk kedepannya nanti akan dipelajari lagi lebih dalam. Dan semoga saja tetap konsisten dalam mempelajari golang ini dan juga menulis dokumentasi dari setiap kegiatan.&lt;/p></description></item></channel></rss>

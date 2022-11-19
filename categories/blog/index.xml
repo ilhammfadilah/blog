@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on Ilham Muhamad Fadilah</title><link>https://ilhammfadilah.github.io/blog/categories/blog/</link><description>Recent content in blog on Ilham Muhamad Fadilah</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 20 Oct 2022 17:08:27 +0700</lastBuildDate><atom:link href="https://ilhammfadilah.github.io/blog/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Belajar Pemrograman Golang</title><link>https://ilhammfadilah.github.io/blog/p/belajar-pemrograman-golang/</link><pubDate>Thu, 20 Oct 2022 17:08:27 +0700</pubDate><guid>https://ilhammfadilah.github.io/blog/p/belajar-pemrograman-golang/</guid><description>&lt;p>Dari sekian banyak bahasa pemrograman yang ada, saya sangat tertarik sekali pada bahasa pemrograman yang dikembangkan oleh google yang diberi nama go atau sering juga disebut golang.&lt;/p>
+&lt;p>Sumber pembelajaran yang saya gunakan adalah ebook yang ditulis oleh Noval Agung Prayogo. Ebook ini dapat didapatkan secara gratis. dan materi didalamnya pun dapat diakses melalui &lt;a class="link" href="https://dasarpemrogramangolang.novalagung.com/" target="_blank" rel="noopener"
+>dasar-pemrograman-golang&lt;/a>&lt;/p>
+&lt;p>Sebagai catatan pembelajaran, saya juga mendokumentasikan pembelajaran pada github repository yang bisa dikunjungi &lt;a class="link" href="https://github.com/ilhammfadilah/dasar-pemrograman-golang" target="_blank" rel="noopener"
+>Github&lt;/a>&lt;/p>
+&lt;p>Untuk saat ini topik - topik yang dipelajari adalah sebagai berikut:&lt;/p>
+&lt;ul>
+&lt;li>variabel&lt;/li>
+&lt;li>tipe data&lt;/li>
+&lt;li>operator&lt;/li>
+&lt;li>seleksi kondisi&lt;/li>
+&lt;li>perulangan&lt;/li>
+&lt;li>array&lt;/li>
+&lt;li>slice&lt;/li>
+&lt;li>map&lt;/li>
+&lt;li>fungsi&lt;/li>
+&lt;li>fungsi multiple return&lt;/li>
+&lt;li>fungsi variadic&lt;/li>
+&lt;li>fungsi closure&lt;/li>
+&lt;li>fungsi sebagai parameter&lt;/li>
+&lt;li>pointer&lt;/li>
+&lt;li>struct&lt;/li>
+&lt;li>method&lt;/li>
+&lt;li>properti public dan private (exported dan unexported)&lt;/li>
+&lt;li>interface&lt;/li>
+&lt;li>interface kosong (any)&lt;/li>
+&lt;li>reflect&lt;/li>
+&lt;li>goroutine&lt;/li>
+&lt;li>channel&lt;/li>
+&lt;li>buffered channel&lt;/li>
+&lt;li>channel - select&lt;/li>
+&lt;li>channel - range &amp;amp; close&lt;/li>
+&lt;li>channel timeout&lt;/li>
+&lt;li>defer dan exit&lt;/li>
+&lt;/ul>
+&lt;p>Untuk kedepannya nanti akan dipelajari lagi lebih dalam. Dan semoga saja tetap konsisten dalam mempelajari golang ini dan juga menulis dokumentasi dari setiap kegiatan.&lt;/p></description></item></channel></rss>
